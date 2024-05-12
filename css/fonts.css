@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Tavolga;
+    src: url("../fonts/Tavolga-Free/tavolga_free.ttf")
+}
+
+@font-face {
+    font-family: GilroyRegular;
+    src: url("../fonts/Gilroy/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url("../fonts/Gilroy/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url("../fonts/Gilroy/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url("../fonts/Gilroy/Gilroy-Extrabold.ttf");
+}
