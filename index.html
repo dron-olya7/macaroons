@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macaroons</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="public/css/style.min.css">
 </head>
 <body>
 <header class="header">
@@ -25,7 +23,7 @@
             </svg>
         </div>
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="src/images/logo.png" alt="logo">
         </div>
         <nav class="menu" id="menu">
             <div class="close">
@@ -76,7 +74,7 @@
             </div>
             <div class="main-macaroons-right">
                 <div class="image">
-                    <img src="images/macaroons-main.png" alt="">
+                    <img src="src/images/macaroons-main.png" alt="">
                 </div>
             </div>
 
@@ -95,7 +93,7 @@
                         масло 82,5%, без дрожжей, маргарина, разрыхлителей и улучшителей муки.</p>
                 </div>
                 <div class="big-macaroons-right">
-                    <img src="images/macaroons-big.png" alt="Big macaroon">
+                    <img src="src/images/macaroons-big.png" alt="Big macaroon">
                 </div>
             </div>
             <div class="big-macaroons-bottom">
@@ -133,10 +131,10 @@
         <div id="choose-macaroons" class="choose-macaroons">
             <div class="container">
                 <h2  class="choose-macaroons-title">Выберите свой макарун</h2>
-                <div class="choose-macaroon-carts">
-                    <div class="choose-macaroon-cart">
+                <div class="choose-macaroon-carts" >
+                    <div class="choose-macaroon-cart" >
                         <div class="choose-macaroon-cart-image">
-                            <img src="images/1.png" alt="Macaroon 1">
+                            <img src="src/images/1.png" alt="Macaroon 1">
                         </div>
                         <div class="choose-macaroon-title">Макарун с малиной</div>
                         <div class="choose-macaroon-btn-quant-price">
@@ -147,9 +145,9 @@
                             <button class="macaroons-action btn">Заказать</button>
                         </div>
                     </div>
-                    <div class="choose-macaroon-cart">
+                    <div class="choose-macaroon-cart" >
                         <div class="choose-macaroon-cart-image">
-                            <img src="images/2.png" alt="Macaroon 2">
+                            <img src="src/images/2.png" alt="Macaroon 2">
                         </div>
                         <div class="choose-macaroon-title">Макарун с манго</div>
                         <div class="choose-macaroon-btn-quant-price">
@@ -160,9 +158,9 @@
                             <button class="macaroons-action btn">Заказать</button>
                         </div>
                     </div>
-                    <div class="choose-macaroon-cart">
+                    <div class="choose-macaroon-cart" >
                         <div class="choose-macaroon-cart-image">
-                            <img src="images/3.png" alt="Macaroon 3">
+                            <img src="src/images/3.png" alt="Macaroon 3">
                         </div>
                         <div class="choose-macaroon-title">Пирог с ванилью</div>
                         <div class="choose-macaroon-btn-quant-price">
@@ -175,7 +173,7 @@
                     </div>
                     <div class="choose-macaroon-cart">
                         <div class="choose-macaroon-cart-image">
-                            <img src="images/4.png" alt="Macaroon 4">
+                            <img src="src/images/4.png" alt="Macaroon 4">
                         </div>
                         <div class="choose-macaroon-title">Пирог с фисташками</div>
                         <div class="choose-macaroon-btn-quant-price">
@@ -195,25 +193,28 @@
         <div class="container">
             <div class="order-macaroon">
                 <div class="order-macaroon-left">
-                    <img class="four-macaroon" src="images/four_macarons.png" alt="four macaroons">
+                    <img class="four-macaroon" src="src/images/four_macarons.png" alt="four macaroons">
                     <div class="order-macaroons-left-strawberry">
-                        <img class="box bounce-1" src="images/strawberry.png" alt="strawberry">
+                        <img class="box bounce-1" src="src/images/strawberry.png" alt="strawberry">
                     </div>
                 </div>
                 <div class="order-macaroon-right">
                     <h2 class="order-macaroons-title">Закажите макарун!</h2>
                     <p class="order-macaroons-description">Выберите понравившийся макарун, заполните форму и ожидайте
                         звонка нашего пекаря!</p>
-                    <form class="order-macaroon-form">
+                    <form class="order-macaroon-form" id="form">
                         <label>Ваш выбор</label>
-                        <input type="text" placeholder="Напишите, что хотите заказать...">
+                        <input type="text" id="order" class="input input-error" placeholder="Напишите, что хотите заказать...">
+                        <div class="error-input">Введите, что хотите заказать</div>
                         <label>Заполните данные для заказа</label>
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="+375 (__) ___ - __ - __">
-                        <button class="macaroons-action order-btn">Оформить заказ</button>
+                        <input type="text" id="name" class="input input-error" placeholder="Ваше имя">
+                        <div class="error-input">Введите имя</div>
+                        <input type="text" id="phone" class="input input-error" placeholder="+375 (__) ___ - __ - __">
+                        <div class="error-input">Введите телефон</div>
+                        <button class="macaroons-action order-btn" id="submit">Оформить заказ</button>
                     </form>
                     <div class="order-macaroons-left-strawberry-mini">
-                        <img class="box2 bounce-2" src="images/strawberry-mini.png" alt="strawberry-mini">
+                        <img class="box2 bounce-2" src="src/images/strawberry-mini.png" alt="strawberry-mini">
                     </div>
                 </div>
             </div>
@@ -226,7 +227,7 @@
         <div class="footer-flex">
             <div class="footer-logo">
                 <div class="footer-logo-img">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="src/images/logo.png" alt="logo">
                 </div>
                 <div class="footer-logo-desc">
                     <p>Все права защищены, 2020</p>
@@ -235,7 +236,7 @@
             </div>
             <div class="instagram">
                 <a href="#" class="insta">
-                    <img src="images/instagram.png" alt="instagram">
+                    <img src="src/images/instagram.png" alt="instagram">
                     <p>Мы в Instagram</p>
                 </a>
             </div>
@@ -244,7 +245,7 @@
     </div>
 
     <div class="tooltip">
-        <img src="images/present.png" alt="present">
+        <img src="src/images/present.png" alt="present">
         <span class="tooltiptext">
             <p>Оформите заказ</p>
             <p>и получите подарок!</p>
@@ -259,7 +260,7 @@
         <div class="footer-flex-adaptive">
             <div class="footer-logo-adaptive">
                 <div class="footer-logo-img-adaptive">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="src/images/logo.png" alt="logo">
                 </div>
             </div>
             <div class="footer-logo-desc-adaptive">
@@ -268,7 +269,7 @@
 
             <div class="instagram-adaptive">
                 <a href="#" class="insta-adaptive">
-                    <img src="images/instagram.png" alt="instagram">
+                    <img src="src/images/instagram.png" alt="instagram">
                     <p>Мы в Instagram</p>
                 </a>
             </div>
@@ -277,7 +278,7 @@
     </div>
 
     <div class="tooltip">
-        <img src="images/present.png" alt="present">
+        <img src="src/images/present.png" alt="present">
         <span class="tooltiptext">
             <p>Оформите заказ</p>
             <p>и получите подарок!</p>
@@ -287,17 +288,13 @@
 
 </footer>
 
-<script>
-    document.getElementById('burger').onclick = function () {
-        document.getElementById('menu').classList.add('open')
-    }
+<div class="loader">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
 
-    document.querySelectorAll('#menu *').forEach((item) => {
-        item.onclick = () => {
-            document.getElementById('menu').classList.remove('open')
-        }
-    })
-</script>
+<script src="src/js/jquery.js"></script>
+<script src="src/js/menu.js"></script>
+<script src="src/js/form.js"></script>
 
 </body>
 </html>

@@ -32,6 +32,12 @@ body{
     justify-content: space-between;
 }
 
+
+.burger{
+    display: none;
+}
+
+
 .logo{
     margin-right: 232px;
 }
@@ -64,6 +70,10 @@ body{
     font-family: "GilroyMedium", sans-serif;
     color: rgb(255 255 255);
     font-weight: 600;
+}
+
+.close{
+    display: none;
 }
 
 .header-phone{
@@ -530,16 +540,6 @@ body{
      color: rgb(255, 255, 255);
  }
 
-/*конец footer*/
-
-.burger{
-    display: none;
-}
-
-.close{
-    display: none;
-}
-
 .on-block{
     position: relative;
 }
@@ -608,3 +608,5 @@ body{
 .footer-adaptive{
     display: none;
 }
+
+/*конец footer*/
